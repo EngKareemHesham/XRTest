@@ -28,6 +28,7 @@
     <script>
 		//A script to prevent opening 2 tabs of the same webgl
         // Broadcast that you're opening a page.
+	  	 console.log("Here0");
 
 
 var AnotherWebGLTabAlreadyOpened = false;
@@ -74,7 +75,8 @@ var AnotherWebGLTabAlreadyOpened = false;
       var script = document.createElement("script");
       script.src = loaderUrl;
       script.onload = () => {
-	  
+	  	 console.log("Here1");
+
 	  if(AnotherWebGLTabAlreadyOpened)
 		  {
 		  alert("Another Take A Walk already opened on another tab...\nPlease close this tab");
